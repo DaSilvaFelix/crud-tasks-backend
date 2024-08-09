@@ -1,11 +1,11 @@
-const mysql = require('mysql2/promise');
+import { createConnection } from 'mysql2/promise';
 
 const coneccion = ()=>{
-   return mysql.createConnection({
+   return createConnection({
         host:'localhost',
         user:'root',
         password:'',
         database:'tasks_db'
     })
 }
-module.exports = coneccion;
+export {coneccion};

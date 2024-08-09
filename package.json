@@ -2,8 +2,9 @@
   "name": "crud-tasks-backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "ser": "node --watch ./src/server.js"
+    "dev": "node --watch ./src/server.js"
   },
   "keywords": [],
   "author": "",

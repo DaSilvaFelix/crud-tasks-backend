@@ -1,4 +1,4 @@
-const coneccion = require("./../db/database");
+ import {coneccion}  from "./../db/database.js"
 
 const traerTasks = async (req, res) => {
   try {
@@ -91,7 +91,7 @@ const eliminarPorId = async (req, res) => {
     }
   } catch (error) {}
 };
-module.exports = {
+export {
   traerTasks,
   crearTareas,
   traerTareaPorId,
